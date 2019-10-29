@@ -20,28 +20,28 @@ export default class SaveModal extends React.Component {
             return null;
         };
         return (
-            <Container>
+            <Container1>
               <div>{this.props.children}</div>
-                <Contents>
-                    <Ax>
+                <Work>
+                    <Please>
                         <X onClick={e => this.onClose(e)} size={30}/>
-                    </Ax>
-                    <Fb>Continue with Facebook </Fb>
-                    <Google>Continue with Google</Google>
-                    <Lines>
-                        <Line1></Line1>
-                        <Or>or</Or>
-                        <Line2></Line2>
-                    </Lines>
-                    <Email>Sign up with Email</Email>
-                    <Login> Already have an Airbnb account?  <Login2>Log in</Login2></Login>
-                </Contents>
-            </Container>
+                    </Please>
+                    <FFS>Continue with Facebook </FFS>
+                    <Goggles>Continue with Goggles</Goggles>
+                    <Larps>
+                        <Larp1></Larp1>
+                        <Whyyoudothis>or</Whyyoudothis>
+                        <Larp2></Larp2>
+                    </Larps>
+                    <Mail>Sign up with Mail</Mail>
+                    <Logout> Already have an Airbnb account?  <Logout2>Log in</Logout2></Logout>
+                </Work>
+            </Container1>
           );
     }
   }
 
-  const Container = styled.div`
+  const Container1 = styled.div`
     position: fixed;
     width: 568px;
     height: 363px;
@@ -57,12 +57,12 @@ export default class SaveModal extends React.Component {
     -webkit-box-shadow: -1px 1px 5000px 900px rgba(0,0,0,0.75);
   `;
 
-  const Contents = styled.div`
+  const Work = styled.div`
     display: flex;
     flex-direction: column;
   `;
 
-  const Ax = styled.span`
+  const Please = styled.span`
     display: inline-block;
     margin-top: 25px;
     margin-left: 30px;
@@ -70,7 +70,7 @@ export default class SaveModal extends React.Component {
     width: 30px;
   `
 
-  const Fb = styled.div`
+  const FFS = styled.div`
     width: 420px;
     height: 23px;
     cursor: pointer;
@@ -93,7 +93,7 @@ export default class SaveModal extends React.Component {
     margin: 20px auto 0 auto;
   `;
 
-  const Google = styled.div`
+  const Goggles = styled.div`
     width: 420px;
     height: 23px;
     cursor: pointer;
@@ -116,7 +116,7 @@ export default class SaveModal extends React.Component {
     margin: 10px auto 0 auto;
   `;
 
-    const Line1 = styled.div`
+    const Larp1 = styled.div`
         border-bottom-width: 1px;
         border-bottom-color: #EBEBEB;
         border-bottom-style: solid;
@@ -125,7 +125,7 @@ export default class SaveModal extends React.Component {
         margin-right: 15px;
     `;
 
-    const Line2 = styled.div`
+    const Larp2 = styled.div`
         border-bottom-width: 1px;
         border-bottom-color: #EBEBEB;
         border-bottom-style: solid;
@@ -134,13 +134,13 @@ export default class SaveModal extends React.Component {
         margin-left: 15px;
     `;
 
-    const Lines = styled.div`
+    const Larps = styled.div`
         display: flex;
         flex-direction: row;
         justify-content: center;
     `;
 
-    const Or = styled.span`
+    const Whyyoudothis = styled.span`
         overflow-wrap: break-word;
         font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
         font-size: 14px;
@@ -151,7 +151,7 @@ export default class SaveModal extends React.Component {
         padding-top: 30px;
     `
 
-    const Email = styled.div`
+    const Mail = styled.div`
         width: 420px;
         height: 23px;
         text-align: center;
@@ -176,7 +176,7 @@ export default class SaveModal extends React.Component {
         margin: 20px auto 0 auto;
     `;
 
-    const Login = styled.div`
+    const Logout = styled.div`
         display: inline-block;
         margin: 15px 0 0 50px;
         word-wrap: break-word;
@@ -187,7 +187,7 @@ export default class SaveModal extends React.Component {
         color: #484848;
     `;
 
-    const Login2 = styled.div`
+    const Logout2 = styled.div`
         margin-left: 6px;
         display: inline-block;
         word-wrap: break-word;
