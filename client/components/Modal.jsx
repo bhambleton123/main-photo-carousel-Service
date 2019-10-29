@@ -46,10 +46,10 @@ export default class Modal extends React.Component {
         return (
             <Idkanymore>
               <div>{this.props.children}</div>
-                <Contents>
-                    <Ax>
+                <Contentss>
+                    <Ax1>
                         <X onClick={e => this.onClose(e)} size={40}/>
-                    </Ax>
+                    </Ax1>
                     <div className="Idkanymore" style={{
                       display:'flex',
                       flexDirection: 'row',
@@ -60,17 +60,17 @@ export default class Modal extends React.Component {
                       margin: 'auto',
                       padding: '5px'
                     }}></i>
-                    <Image><img src={this.props.list[this.state.currentPhoto]} style={{
+                    <Image2><img src={this.props.list[this.state.currentPhoto]} style={{
                        borderRadius: '20px',
                        objectFit: 'cover'
-                    }}/></Image>
+                    }}/></Image2>
                     <i className="fas fa-chevron-right" onClick={this.increaseCur} style={{
                       flexDirection: 'right',
                       margin: 'auto',
                       padding: '5px'
                     }}></i>
                     <MiniSlider list={this.props.list} homepagePhoto={this.props.homepagePhoto} currentPhoto={this.state.currentPhoto}/>
-                    <Description>
+                    <Description1>
                       <div style={{
                         fontWeight: 'bold',
                         textAlign: 'left'
@@ -83,9 +83,9 @@ export default class Modal extends React.Component {
                     }}>
                     Photo Verified by Airbnb
                     </div>
-                    </Description>
+                    </Description1>
                     </div>
-                </Contents>
+                </Contentss>
             </Idkanymore>
           );
     }
@@ -104,16 +104,17 @@ export default class Modal extends React.Component {
     align-items: center;
     background: white;
     border: 1px solid #ccc;
+    z-index: 4;
   `;
 
-  const Contents = styled.div`
+  const Contentss = styled.div`
     display: flex;
     flex-direction: column;
   `;
 
 
 
-  const Ax = styled.span`
+  const Ax1 = styled.span`
     display: inline-block;
     margin-top: 25px;
     margin-left: 30px;
@@ -121,7 +122,7 @@ export default class Modal extends React.Component {
     width: 30px;
   `
 
-  const Description = styled.div`
+  const Description1 = styled.div`
     width: 200px;
     height: 200px;
     cursor: pointer;
@@ -138,7 +139,7 @@ export default class Modal extends React.Component {
 
   `;
 
-  const Image = styled.div`
+  const Image2 = styled.div`
     width: 600px;
     height: 450px;
     cursor: pointer;
