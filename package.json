@@ -11,6 +11,7 @@
   "scripts": {
     "start": "node server/index.js",
     "react-dev": "webpack --config webpack.config.js -d --watch",
+    "react-prod": "webpack --config webpack.config.js -d",
     "server-dev": "nodemon server/index.js",
     "seed": "node spec/seed.js",
     "test": "jest"
