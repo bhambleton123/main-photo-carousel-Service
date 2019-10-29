@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/photos', { useNewUrlParser: true });
+mongoose.connect('mongodb://localhost/photos', { useNewUrlParser: true, useUnifiedTopology: true });
 
 
 let photoSchema = mongoose.Schema({ // using mongoose to create a schema

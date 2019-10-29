@@ -1,15 +1,7 @@
 import React from 'react';
 import MainPhotos from './MainPhotos.jsx'
 import Modal from './Modal.jsx';
-import styled from 'styled-Components';
-import SavePhotos from './SaveButton.jsx';
 import SaveModal from './SaveModal.jsx';
-import faker from 'faker';
-
-
-
-
-
 
 class App extends React.Component {
   constructor(props) {
