@@ -44,13 +44,13 @@ export default class Modal extends React.Component {
             return null;
         };
         return (
-            <Container>
+            <Idkanymore>
               <div>{this.props.children}</div>
                 <Contents>
                     <Ax>
                         <X onClick={e => this.onClose(e)} size={40}/>
                     </Ax>
-                    <div className="container" style={{
+                    <div className="Idkanymore" style={{
                       display:'flex',
                       flexDirection: 'row',
                       margin: 'auto'
@@ -86,13 +86,13 @@ export default class Modal extends React.Component {
                     </Description>
                     </div>
                 </Contents>
-            </Container>
+            </Idkanymore>
           );
     }
   }
 
 
-  const Container = styled.div`
+  const Idkanymore = styled.div`
     position: fixed;
     width: 1430px;
     height: 720px;
